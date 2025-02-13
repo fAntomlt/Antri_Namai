@@ -1,0 +1,39 @@
+body {
+    font-family: 'Outfit', sans-serif;
+  }
+.header {
+    width: 600px;
+    height: 100px;
+    background-color: #2aabd6;
+    color: white;
+}
+.logoDydis {
+    width: 50px;
+    height: 50px;
+}
+.klaseFlex{
+    display: flex;
+    gap: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.centerRigth {
+    display: flex;
+    gap: 20px;
+    /* text-align: center; */
+    align-items: center;
+}
+.antriN{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+}
+.antriH{
+    padding-bottom: 20px;
+}
+.klaseA{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
