@@ -1,0 +1,38 @@
+footer {
+    padding: 30px 50px;
+    font-size: 25px;
+    /* background-color: black;
+    color: white; */
+}
+
+.fLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.fGmail {
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: #2aabd6;
+}
+
+#fSubmitButton {
+    height: 60px;
+    width: 170px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #2aabd6;
+    border: none;
+    color: white;
+}
+
+.fH3{
+    color: #2aabd6;
+}
