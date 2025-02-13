@@ -6,15 +6,72 @@
     <title>Antri Namai</title>
     <script src="./main.js"></script>
     <link rel="stylesheet" href="main.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
         <!-- RITOS UZDUOTIS -->
-
+        <nav class="header">
+            <section class="klaseFlex">
+                <div class="antriN">
+            <img class="logoDydis" src="./modules/antri namai.png" alt="mažas namelis su letena"> 
+            <!-- <div> -->
+            <h3 class="antriH">Antri namai</h3>
+            <!-- </div> --></div>
+            <div class="centerRigth">
+                <a class="klaseA" href="linkas">Parama</a>
+                <a class="klaseA" href="linkas">Vizitas</a>
+                <a class="klaseA" href="linkas">Gyvūnai</a>
+                <a class="klaseA" href="linkas">Registracija</a>
+            </div>
+        </section>
+        <section>
+            <!-- <div>
+                <a href="linkas">Parama</a>
+                <a href="linkas">Vizitas</a>
+                <a href="linkas">Gyvūnai</a>
+                <a href="linkas">Registracija</a>
+            </div> -->
+        </section>
+        </nav>
     </header>
     <main>
         <!-- MAIN UZDUOTYS -->
+
+        
+        <section><!--Mobile Buttons-->
+            <h2>Kaip gali prisidėti?</h2>
+            <!-- Mygtukų konteineris -->
+            <div class="btn-container">
+                <button class="btn" onclick="showContent('parama')">Paramos būdai</button>
+                <button class="btn" onclick="showContent('gyvunai')">Dovanojami gyvūnai</button>
+            </div>
+            
+            <!-- Pirmas turinio blokas su ikonų sąrašu -->
+            <div id="parama" class="content">
+                <div class="icons">
+                    <div class="icon-row">
+                        <div class="icon-box" onclick="removeBg()"><img src="https://img.icons8.com/ios/50/2aabd6/pet.png"/><p>Laikina globa</p></div>
+                        <div class="icon-box" onclick="removeBg()"><img src="https://img.icons8.com/ios/50/2aabd6/phone.png"/><p>Skubi pagalba</p></div>
+                        <div class="icon-box" onclick="removeBg()"><img src="https://img.icons8.com/ios/50/2aabd6/hospital.png"/><p>Veterinarija</p></div>
+                    </div>
+                    <div class="icon-row">
+                        <div class="icon-box" onclick="removeBg()"><img src="https://img.icons8.com/ios/50/2aabd6/home.png"/><p>Gyvūnų globa prieglaudoje</p></div>
+                        <div class="icon-box" onclick="removeBg()"><img src="https://img.icons8.com/ios/50/2aabd6/animal-shelter.png"/><p>Beglobių mažinimas</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Antras turinio blokas su dovanojamų gyvūnų sąrašu -->
+            <div id="gyvunai" class="content">
+                <p><img src="https://img.icons8.com/ios/50/2aabd6/dog.png"/> Sąrašas gyvūnų, kuriems reikia naujų namų.</p>
+            </div>
+        </section>
+    
          
     </main>
     <footer>
