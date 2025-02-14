@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antri Namai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                LOGO
+            </div>
+            <nav>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section> <!-- Gyvunu korteliu sekcija-->
+            <div class="cardsContainer"> <!-- Gyvunu korteles -->
+                <!-- VISOS KORTELES CIA -->
+            </div>
+        </section>
+        <section class="gyvunai"> <!-- Gyvunu formos ir info sekcija-->
+            <div class="pridejimoInfo">
+                <h1>Gyvuno Pridejimas</h1>
+                <p>Nori, jog tavo gyvunas surastu naujus namus greiciau?<br>
+                Prisidek ji i musu registru sarasa!
+                </p>
+            </div>
+            <div class="pridejimoForma"> <!-- Gyvunu pridejimo forma -->
+                <form>
+                    <div class="top"></div>
+                    <div class="entry">
+                        <div>
+                            <label for="name">Vardas:</label>
+                            <input type="text" id="name" name="name" minlength="1" maxlength="15" required placeholder="Ramzis">
+                        </div>
+                        <div>
+                            <label for="age">Amzius:</label>
+                            <input type="number" id="age" name="age" min="0" max="30" required placeholder="5">
+                        </div>
+                        <div>
+                            <label for="animal">Gyvuno Tipas:</label>
+                            <input type="text" id="animal" name="animal" minlength="1" maxlength="15" required placeholder="Suo">
+                        </div>
+                        <div>
+                            <label for="breed">Veisle:</label>
+                            <input type="text" id="breed" name="breed" minlength="1" maxlength="20" placeholder="Vokieciu Aviganis">
+                        </div>
+                        <div>
+                            <label for="info">Papildoma Informacija:</label>
+                            <textarea id="info" name="info" minlength="1" required placeholder="Gyvunelio pomegiai, megstamiausias maistas, ir kita"></textarea>
+                        </div>
+                        <div>
+                            <label for="image">Nuotrauka:</label>
+                            <input type="url" id="image" name="image" required placeholder="https://www.google.com/image/">
+                        </div>
+                        <div>
+                            <button type="submit">Pateikti</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
