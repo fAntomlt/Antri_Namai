@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.laikinasHeader {
+    background-color: aqua;
+    height: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    /* margin: 20px; */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #86c1df;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.form-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 16px;
+    margin: 0;
+    padding: 7px;
+}
+
+.terms {
+    width: 15px;
+}
+
+.submit-btn {
+    background-color: #2aabd6;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+    margin: 0 auto; 
+    display: block;
+}
+
+.submit-btn:hover {
+    background-color: #1a8cba;
+}
+
+

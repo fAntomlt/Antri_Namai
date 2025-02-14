@@ -81,7 +81,8 @@ body {
 .btn {
     background: #2aabd6;
     color: white;
-    padding: 10px 20px;
+    padding: 17px 17px;
+    width: 200px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -135,6 +136,8 @@ body {
     .icon-row {
         flex-wrap: wrap;
     }
+
+/* FOOTER */
 
 footer {
     padding: 30px 50px;
