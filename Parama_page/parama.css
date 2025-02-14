@@ -6,7 +6,6 @@ body {
     font-style: normal;
   }
 .header {
-    width: 600px;
     height: 100px;
     background-color: #2aabd6;
     color: white;
@@ -46,20 +45,62 @@ body {
     gap: 0px;
 }
 .imgStilius {
-    width: 150px;
-    height: 150px;
+    width: 600px;
+    height: 300px;
 }
 .divParama {
     display: flex;
     height: 300px;
     width: 100%; /* Kad užimtų visą plotį tėvinės talpyklos */
     max-width: 600px; /* Maksimalus plotis lieka 600px */
-    border: 1px dashed #2aabd6;
+    /* border: 1px dashed #2aabd6; */
     padding: 20px;
     box-sizing: border-box; /* Užtikrina, kad paddingas bus įskaičiuotas į bendrą plotį */
+    gap: 20px;
 }
-
 .divParama p {
     margin: 0;
     word-wrap: break-word; /* Užtikrina, kad ilgi žodžiai nesulaužytų dizaino */
+    color: #2aabd6;
+}
+.paramaH1{
+    color: #2aabd6;
+}
+
+/* paramos forma */
+.form-container {
+    /* display: grid; */
+    /* margin-top: 20px; */
+    gap: 5px;
+}
+input[type="number"] {
+    /* padding: 10px; */
+    width: 100px;
+    margin-right: 10px;
+    border: 2px solid #2aabd6;
+    border-radius: 7px;
+}
+button {
+    /* padding: 10px 20px; */
+    background-color: #2aabd6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+button:hover {
+    background-color: #1a8a9c;
+}
+#thanksMessage {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #2aabd6;
+}
+label {
+    color: #2aabd6;
+    font-style: italic;
+}
+.logoSt{
+    width: 100px;
+    height: 100px;
 }
