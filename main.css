@@ -163,8 +163,19 @@ h2 {
 footer {
     padding: 30px 50px;
     font-size: 25px;
-    /* background-color: black;
-    color: white; */
+    background-color: #2aabd6;
+    color: white;
+}
+
+.footer-wrapper {
+    position: relative;
+    margin-top: 50px;
+}
+
+.footer-wrapper svg {
+    left: 0;
+    width: 100%;
+    margin-bottom: -5px;
 }
 
 .fLogo {
@@ -176,12 +187,15 @@ footer {
     width: 320px;
     height: 40px;
     font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #edeff0;
 }
 
-a {
+.fSocial {
     text-decoration: none;
-    /* padding: 5px; */
-    color: #2aabd6;
+    padding: 5px;
+    color: black;
 }
 #fSubmitButton {
     height: 60px;
@@ -189,10 +203,68 @@ a {
     border-radius: 7px;
     font-size: 30px;
     font-weight: bold;
-    background-color: #2aabd6;
+    background-color: white;
     border: none;
+    color: black;
+}
+
+#fSubmitButton:hover {
+    background-color: #c6e2eb;
+}
+
+.fH3{
     color: white;
 }
-.fH3{
-    color: #2aabd6;
+
+.pRegistration {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.rightsReserved {
+    padding-top: 40px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+
+@media (min-width: 900px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .fLogo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .fGmail {
+        width: 400px;
+        height: 40px;
+    }
+
+    #fSubmitButton {
+        height: 70px;
+        width: 200px;
+    }
+    
+    #fSubmitButton:hover {
+        background-color: #c6e2eb;
+    }
+    
+    footer > .rightsReserved {
+    grid-column: 1 / span 2; 
+    text-align: center; 
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    }
 }
