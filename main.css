@@ -5,7 +5,6 @@ body {
     font-style: normal;
   }
 .header {
-    width: 600px;
     height: 100px;
     background-color: #2aabd6;
     color: white;
@@ -16,14 +15,13 @@ body {
 }
 .klaseFlex{
     display: flex;
-    gap: 80px;
+    gap: 50px;
     padding-left: 20px;
     padding-right: 20px;
 }
 .centerRigth {
     display: flex;
     gap: 20px;
-    /* text-align: center; */
     align-items: center;
 }
 .antriN{
@@ -36,24 +34,50 @@ body {
     padding-bottom: 20px;
 }
 .klaseA{
-    font-style: italic;
     text-decoration: none;
     color: white;
 }
-/* Antraštės stilius */
-h2 {
-    margin-bottom: 15px;
+.imgFon {
+    position: relative;
+    background-image: url(./media/suniuku_foto.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    box-shadow: 0 0 100px #2aabd69c;
 }
-
-/* Mygtukų konteinerio stilius */
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.imgFon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(78, 187, 241, 0.219);
+    z-index: 1;
 }
-
-/* Mygtukų stilius */
+.buttonParama{
+    background-color: #2aabd6;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #2aabd6;
+    border-radius: 7px;
+    font-size: larger;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+.buttonParama:hover {
+    background: black;
+}
+.paramaH1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+}
 .btn {
     background: #2aabd6;
     color: white;
@@ -64,12 +88,10 @@ h2 {
     transition: 0.3s;
 }
 
-/* Mygtukų hover efektas */
 .btn:hover {
     background: black;
 }
 
-/* Paslėptas turinys su fono stiliumi */
 .content {
     margin-top: 20px;
     padding: 20px;
@@ -78,7 +100,6 @@ h2 {
     display: none;
 }
 
-/* Ikonų konteinerio nustatymai */
 .icons {
     display: flex;
     justify-content: center;
@@ -89,14 +110,12 @@ h2 {
     align-items: center;
 }
 
-/* Eilučių konteineris ikonoms */
 .icon-row {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Kiekvienos ikonos dėžutė */
 .icon-box {
     width: 150px;
     padding: 15px;
@@ -106,7 +125,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Ikonų dydis */
 .icon-box img {
     width: 50px;
     height: 50px;
@@ -136,6 +154,62 @@ footer {
     left: 0;
     width: 100%;
     margin-bottom: -5px;
+}
+    
+.section-title {
+    margin-bottom: 3px;
+    font-size: 0.95em;
+}
+.support-section {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+}
+.support-button {
+    flex: 1;
+    padding: 3px 10px;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #2aabd6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7em;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+}
+.support-button:hover {
+    background-color: black;
+}
+.icons-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 3px;
+    width: 100%;
+}
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.icon-box {
+    flex: 1 1 30%;
+    max-width: 72px;
+    padding: 1px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 0.65em;
+}
+.icon-box img {
+    width: 20px;
+    height: 20px;
 }
 
 .fLogo {
@@ -188,6 +262,99 @@ footer {
     margin: 0;
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideShow 25s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+.slide:nth-child(5) { animation-delay: 25s; }
+
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    16% { opacity: 1; } 
+    50% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.infoBox {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 18px;
+}
+
+.infoName {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    >h1{
+        margin-bottom: 0px;
+        font-size: 66px
+    }
+    >h2{
+        margin-top: 5px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.buttons{
+    margin: 80px 0;
+    >h1{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+.container {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    >p{
+        padding: 20px;
+        margin-top: 0;
+    }
+}
+
+.footer-column{
+    padding-top: 30px;
+}
 
 @media (min-width: 900px) {
     footer {

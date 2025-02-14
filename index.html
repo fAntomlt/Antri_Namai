@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antri Namai</title>
     <script src="./main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -16,29 +15,51 @@
         <nav class="header">
             <section class="klaseFlex">
                 <div class="antriN">
-            <img class="logoDydis" src="./modules/antri namai.png" alt="mažas namelis su letena"> 
-            <!-- <div> -->
-            <h3 class="antriH">Antri namai</h3>
-            <!-- </div> --></div>
-            <div class="centerRigth">
-                <a class="klaseA" href="linkas">Parama</a>
-                <a class="klaseA" href="linkas">Vizitas</a>
-                <a class="klaseA" href="linkas">Gyvūnai</a>
-                <a class="klaseA" href="linkas">Registracija</a>
-            </div>
-        </section>
+                    <img class="logoDydis" src="./media/antri_namai.png" alt="mažas namelis su letena"> 
+                    <h3 class="antriH">Antri namai</h3>
+                </div>
+                <div class="centerRigth">
+                    <a class="klaseA" href="linkas">Parama</a>
+                    <a class="klaseA" href="linkas">Vizitas</a>
+                    <a class="klaseA" href="linkas">Gyvūnai</a>
+                    <a class="klaseA" href="linkas">Registracija</a>
+                </div>
+            </section>
         </nav>
     </header>
     <main>
-        <!-- MAIN UZDUOTYS -->
-        <section><!--Mobile Buttons-->
-            <h2>Kaip gali prisidėti?</h2>
-            <!-- Mygtukų konteineris -->
+        <Section> <!-- HERO -->
+            <div class="slideshow">
+                <img class="slide" src="/modules/SlideShow/add1.jpg" alt="Foto 1">
+                <img class="slide" src="/modules/SlideShow/add2.jpg" alt="Foto 2">
+                <img class="slide" src="/modules/SlideShow/add3.jpg" alt="Foto 3">
+                <img class="slide" src="/modules/SlideShow/add4.jpg" alt="Foto 4">
+                <img class="slide" src="/modules/SlideShow/add5.jpg" alt="Foto 5">
+                <div class="infoName">
+                    <h1>Antri Namai</h1>
+                    <h2>Gyvūnai ieško namų!</h2>
+                </div>
+                <div class="infoBox">
+                    Šie nuostabūs gyvunai laukia mylinčių šeimininkų. <br>
+                    Priimkite juos į savo šeimą ir suteikite jiems naują gyvenimą!
+                </div>
+            </div>
+        </Section>
+        <section class="buttons"> <!-- Buttons -->
+            <h1>Kaip gali prisidėti?</h1>
+            <div class="container">
+                <p>Prisidėti prie beglobių gyvūnų globos galima įvairiais būdais – nuo paramos, savanorystės iki gyvūnų priglaudimo. Kiekviena pagalba yra svarbi ir gali suteikti naują gyvenimą tiems, kurie jo labiausiai laukia.</p>
+            </div>
             <div class="btn-container">
                 <button class="btn">Registruotis Vizitui</button>
                 <button class="btn">Dovanojami gyvūnai</button>
             </div>
         </section>
+         <section class="imgFon"> <!-- Additional Info -->
+                <div>
+                    <h1 class="paramaH1">Padėkite mums <br> kurti geresnį rytojų <br> mūsų mieliems augintiniams</h1>
+                </div>
+         </section>
     </main>
     <div class="footer-wrapper">
         <svg viewBox="0 0 1440 320">
@@ -74,7 +95,7 @@
         <div class="footer-column">
             <h2>Nepraleisk naujienų</h2>
             <p class="pRegistration">Užsiregistruokite prenumeratai!</p>
-            <div> <!--forma-->
+            <div class="naujienlaiskis"> <!--forma-->
                 <form>
                     <input type="text" id="fGmail" class="fGmail" name="fGmail" placeholder="Įrašykite el.paštą"><br><br>
                     
