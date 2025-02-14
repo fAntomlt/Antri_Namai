@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antri Namai</title>
     <script src="./main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
         <nav class="header">
             <section class="klaseFlex">
                 <div class="antriN">
-            <img class="logoDydis" src="./modules/antri namai.png" alt="mažas namelis su letena"> 
+            <img class="logoDydis" src="./media/antri_namai.png" alt="mažas namelis su letena"> 
             <!-- <div> -->
             <h3 class="antriH">Antri namai</h3>
             <!-- </div> --></div>
@@ -29,91 +29,98 @@
         </nav>
     </header>
     <main>
+        <Section> <!--SlideShow-->
+            <div class="slideshow">
+                <img class="slide" src="/modules/SlideShow/add1.jpg" alt="Foto 1">
+                <img class="slide" src="/modules/SlideShow/add2.jpg" alt="Foto 2">
+                <img class="slide" src="/modules/SlideShow/add3.jpg" alt="Foto 3">
+                <img class="slide" src="/modules/SlideShow/add4.jpg" alt="Foto 4">
+                <img class="slide" src="/modules/SlideShow/add5.jpg" alt="Foto 5">
+                <!-- Additional info -->
+                <div class="infoName">
+                    <h2>Gyvūnai ieško namų!</h2>
+                </div>
+                <div class="infoBox">
+                    Šie nuostabūs gyvunai laukia mylinčių šeimininkų. <br>
+                    Priimkite juos į savo šeimą ir suteikite jiems naują gyvenimą!
+                </div>
+            </div>
+        </Section>
         <!-- MAIN UZDUOTYS -->
-    <section class="container">
-        <h2 class="section-title">Kaip gali prisidėti?</h2>
-            
-        <div class="support-section">
-            <button class="support-button">Registruotis vizitui</button>
-            <button class="support-button">Dovanojami gyvūnai</button>
-        </div>
-    
-        <div class="icons-section">
-                <!-- Pirmoji ikonų eilutė -->
-        <div class="icon-row">
-            <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/helping-hand.png" alt="Beglobių mažinimas"/>
-                        <p>Beglobių mažinimas</p>
-                    </div>
-            <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/home.png" alt="Laikina globa"/>
-                        <p>Laikina globa</p>
-                    </div>
-            <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/animal-shelter.png" alt="Globa prieglaudoje"/>
-                        <p>Globa prieglaudoje</p>
-                    </div>
+         <!-- Hero -->
+         <section class="imgFon"> 
+            <a href="./Parama_page/parama.html"><button class="">Parama</button></a>
+                <div>
+                    <h1 class="paramaH1">Padėkite mums - <br> kurti geresnį rytojų - <br> mūsų mieliems augintiniams</h1>
                 </div>
-                
-            <!-- Antroji ikonų eilutė -->
-            <div class="icon-row">
-                <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/phone.png" alt="Skubi pagalba"/>
-                        <p>Skubi pagalba</p>
-                    </div>
-                <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/dog-park.png" alt="Gyvūnų socializacija"/>
-                        <p>Gyvūnų socializacija</p>
-                    </div>
-                <div class="icon-box">
-                        <img src="https://img.icons8.com/ios/50/2aabd6/hospital.png" alt="Veterinarijos kabinetas"/>
-                        <p>Veterinarijos kabinetas</p>
-                    </div>
-                </div>
+                <div>
+                    <!-- <a href="parama.html" class="buttonParama"><button>Parma</button></a> -->
+                    <!-- <button class="buttonParama"><a href="./parama.html" target="_blank">Parama</a></button> -->
+            </div>
+            <!-- <a href="./Parama_page/parama.html" class="buttonParama"><button>Parama</button></a> -->
+         </section>
+        <section><!--Mobile Buttons-->
+            <h2>Kaip gali prisidėti?</h2>
+            <!-- Mygtukų konteineris -->
+            <div class="btn-container">
+                <button class="btn">Registruotis Vizitui</button>
+                <button class="btn">Dovanojami gyvūnai</button>
             </div>
         </section>
         
         <section class="container">
             <p>Prisidėti prie beglobių gyvūnų globos galima įvairiais būdais – nuo paramos, savanorystės iki gyvūnų priglaudimo. Kiekviena pagalba yra svarbi ir gali suteikti naują gyvenimą tiems, kurie jo labiausiai laukia.</p>
         </section>
+    
+         
     </main>
-    <footer>
-        <img src="https://cdn-icons-png.flaticon.com/512/3769/3769017.png" alt="logo" class="fLogo"/>
-        <h3 class="fH3">Prieglauda</h3>
-        <div> <!--kontaktai-->
-            <p>
-                Tel.nr.: 0 683 93286<br>
-                El.paštas: info@antrinamai.lt<br>
-                Adresas: Ozo g. 35, Vilnius<br>
-                Darbo laikas: I-VII 10-19 val.
-            </p>
+    <div class="footer-wrapper">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#2aabd6" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,138.7C960,128,1056,160,1152,181.3C1248,203,1344,213,1392,218.7L1440,224V320H0Z"></path>
+        </svg>
+    <footer> <!--(f - clase/id footeri)-->
+        <div class="footer-column">
+            <img src="https://cdn-icons-png.flaticon.com/512/3769/3769017.png" alt="logo" class="fLogo"/>
+            <h3 class="fH3">Prieglauda</h3>
+            <div> <!--kontaktai-->
+                <p>
+                    Tel.nr.: 0 683 93286<br>
+                    El.paštas: info@antrinamai.lt<br>
+                    Adresas: Ozo g. 35, Vilnius<br>
+                    Darbo laikas: I-VII 10-19 val.
+                </p>
+            </div>
+            <div> <!--soc. tinklai-->
+                <a href="#" target="_blank" class="fSocial">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" target="_blank" class="fSocial">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" target="_blank" class="fSocial">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" target="_blank" class="fSocial">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
         </div>
-        <div> <!--soc. tinklai-->
-            <a href="#" target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="bi bi-youtube"></i>
-            </a>
+        <div class="footer-column">
+            <h2>Nepraleisk naujienų</h2>
+            <p class="pRegistration">Užsiregistruokite prenumeratai!</p>
+            <div> <!--forma-->
+                <form>
+                    <input type="text" id="fGmail" class="fGmail" name="fGmail" placeholder="Įrašykite el.paštą"><br><br>
+                    
+                    <!--TODO save emails-->
+                    <input type="submit" value="Pateikti" id="fSubmitButton"> 
+                </form>
+            </div>   
         </div>
-        <h2>Nepraleisk naujienų</h2>
-        <div> <!--forma (f - clase/id footeri)-->
-            <form>
-                <input type="text" id="fGmail" class="fGmail" name="fGmail" placeholder="Įrašykite el.paštą"><br><br>
-                
-                <!--TODO save emails-->
-                <input type="submit" value="Pateikti" id="fSubmitButton"> 
-            </form>
-        </div>
-        <div> <!--privatumo politika-->
-            
+        <div class="rightsReserved">
+            <p >© 2025 All Rights Reserved</p>
         </div>
     </footer>
+    </div>
 </body>
 </html>
