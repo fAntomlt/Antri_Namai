@@ -45,7 +45,6 @@ body {
     .container {
         text-align: center;
         width: 100%;
-        max-width: 600px;
         padding: 2px;
         overflow: hidden;
         margin: 0 auto;
@@ -64,14 +63,12 @@ body {
         gap: 2px;
         margin-bottom: 3px;
         flex-wrap: wrap;
-        width: 100%;
     }
     
     /* Mygtukų stilius */
     .support-button {
         flex: 1;
-        min-width: 110px;
-        padding: 3px 5px;
+        padding: 3px 10px;
         border-radius: 7px;
         text-align: center;
         background-color: #2aabd6;
@@ -100,8 +97,8 @@ body {
     
     .icon-row {
         display: flex;
-        justify-content: space-between;
-        gap: 3px;
+        justify-content: center;
+        gap: 10px;
         width: 100%;
         flex-wrap: wrap;
     }
