@@ -41,30 +41,44 @@ body {
     color: white;
 }
 .imgStilFlex{
-    display: flex;
-    gap: 0px;
-}
-.imgStilius {
+    background-image: url(./media/kaciuk.jpg);
+    position: relative;
     width: 600px;
-    height: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    box-shadow: 0 0 100px #2aabd69c;
+}
+
+.imgStilFlex2{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    box-shadow: 0 0 100px #2aabd69c;
+}
+.imgParama{
+    width: 150px;
+    height: 150px;
 }
 .divParama {
-    display: flex;
-    height: 300px;
-    width: 100%; /* Kad užimtų visą plotį tėvinės talpyklos */
-    max-width: 600px; /* Maksimalus plotis lieka 600px */
-    /* border: 1px dashed #2aabd6; */
-    padding: 20px;
-    box-sizing: border-box; /* Užtikrina, kad paddingas bus įskaičiuotas į bendrą plotį */
-    gap: 20px;
+  text-align: center;
 }
 .divParama p {
     margin: 0;
     word-wrap: break-word; /* Užtikrina, kad ilgi žodžiai nesulaužytų dizaino */
-    color: #2aabd6;
+    color: #2aabd69c; 
+    font-style: #2aabd69c;
+    font-size: 20px;
+    font-weight: bold;
 }
 .paramaH1{
-    color: #2aabd6;
+    color: #2aabd69c;
 }
 
 /* paramos forma */
@@ -99,8 +113,4 @@ button:hover {
 label {
     color: #2aabd6;
     font-style: italic;
-}
-.logoSt{
-    width: 100px;
-    height: 100px;
 }
