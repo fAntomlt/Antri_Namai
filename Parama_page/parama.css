@@ -41,7 +41,7 @@ body {
     color: white;
 }
 .imgStilFlex{
-    background-image: url(./media/kaciuk.jpg);
+    background-image: url(./media/Gyvūnųzaislai.jpg);
     position: relative;
     width: 600px;
     height: 400px;
@@ -49,7 +49,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-    box-shadow: 0 0 100px #2aabd69c;
+    /* box-shadow: 0 0 100px #2aabd69c; */
 }
 
 /* nuo cia */
@@ -58,14 +58,14 @@ body {
     display: flex;
     justify-content: center; /* Centruoja turinį horizontaliai */
     align-items: center; /* Centruoja turinį vertikaliai */
-    height: 100vh; /* Užima visą ekrano aukštį */
+    /* height: 100vh; Užima visą ekrano aukštį */
     background-color: #f0f0f0; /* Fonas aplink formą */
 }
 
 .form-container {
     width: 300px; /* Nustato fiksuotą plotį */
     height: 300px; /* Nustato fiksuotą aukštį, kad būtų kvadrato forma */
-    background-color: #2aabd6; /* Mėlynas fonas */
+    /* background-color: #2aabd6; Mėlynas fonas */
     display: flex;
     flex-direction: column; /* Elementai bus išdėstyti vertikaliai */
     justify-content: center; /* Centruoja formos elementus vertikaliai */
@@ -111,19 +111,15 @@ label {
 .imgStilFlex2{
     position: relative;
     width: 600px;
-    height: 400px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     box-shadow: 0 0 100px #2aabd69c;
-}
-.imgParama{
-    width: 150px;
-    height: 150px;
-}
-.divParama {
-  text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .divParama p {
     margin: 0;
@@ -145,7 +141,7 @@ label {
 }
 input[type="number"] {
     /* padding: 10px; */
-    width: 100px;
+    width: 230px;
     margin-right: 10px;
     border: 2px solid #2aabd6;
     border-radius: 7px;
@@ -157,16 +153,19 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 7px;
+    /* height: 10px;
+    width: 30px; */
 }
 button:hover {
-    background-color: #1a8a9c;
+    background-color: #0b1314;
 }
 #thanksMessage {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #2aabd6;
+    /* margin-top: 0px; */
+    font-size: 50px;
+    color: white;
 }
 label {
     color: #2aabd6;
     font-style: italic;
+    font-size: 30px;
 }
