@@ -52,6 +52,62 @@ body {
     box-shadow: 0 0 100px #2aabd69c;
 }
 
+/* nuo cia */
+/* Pagrindinis konteineris, kuris sukuria kvadrato formą */
+.imgStilFlex {
+    display: flex;
+    justify-content: center; /* Centruoja turinį horizontaliai */
+    align-items: center; /* Centruoja turinį vertikaliai */
+    height: 100vh; /* Užima visą ekrano aukštį */
+    background-color: #f0f0f0; /* Fonas aplink formą */
+}
+
+.form-container {
+    width: 300px; /* Nustato fiksuotą plotį */
+    height: 300px; /* Nustato fiksuotą aukštį, kad būtų kvadrato forma */
+    background-color: #2aabd6; /* Mėlynas fonas */
+    display: flex;
+    flex-direction: column; /* Elementai bus išdėstyti vertikaliai */
+    justify-content: center; /* Centruoja formos elementus vertikaliai */
+    align-items: center; /* Centruoja formos elementus horizontaliai */
+    border-radius: 10px; /* Suapvalinti kampai */
+    padding: 20px;
+    box-sizing: border-box; /* Paddingas yra įtrauktas į bendrą plotį ir aukštį */
+}
+
+/* Nustatome formos elementų stilius */
+input[type="number"], button {
+    padding: 10px;
+    margin: 10px 0; /* Atstumas tarp įvesties ir mygtuko */
+    font-size: 16px;
+    border-radius: 5px; /* Suapvalinti kampai */
+    border: 1px solid #007bb5; /* Šviesiai mėlyna riba */
+}
+
+/* Mygtuko dizainas */
+button {
+    background-color: #007bb5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%; /* Mygtukas užima visą plotį */
+}
+
+/* Mygtuko užvedimo efektas */
+button:hover {
+    background-color: #005f86;
+}
+
+/* Pavadinimas ir etiketės stilius */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* iki cia */
+
 .imgStilFlex2{
     position: relative;
     width: 600px;
