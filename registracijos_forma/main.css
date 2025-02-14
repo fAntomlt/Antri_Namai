@@ -5,6 +5,7 @@
     height: 100px;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +13,43 @@ body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.header {
+    width: 600px;
+    height: 100px;
+    background-color: #2aabd6;
+    color: white;
+}
+.logoDydis {
+    width: 50px;
+    height: 50px;
+}
+.klaseFlex{
+    display: flex;
+    gap: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.centerRigth {
+    display: flex;
+    gap: 20px;
+    /* text-align: center; */
+    align-items: center;
+}
+.antriN{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+}
+.antriH{
+    padding-bottom: 20px;
+}
+.klaseA{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
 }
 
 .container {
@@ -151,4 +189,44 @@ footer {
     font-size: 15px;
     text-align: center;
     margin: 0;
+}
+
+@media (min-width: 900px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .fLogo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .fGmail {
+        width: 400px;
+        height: 40px;
+    }
+
+    #fSubmitButton {
+        height: 70px;
+        width: 200px;
+    }
+    
+    #fSubmitButton:hover {
+        background-color: #c6e2eb;
+    }
+    
+    footer > .rightsReserved {
+    grid-column: 1 / span 2; 
+    text-align: center; 
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    }
 }
