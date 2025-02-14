@@ -43,19 +43,27 @@
                     <div class="entry">
                         <div>
                             <label for="name">Vardas:</label>
-                            <input type="text" id="name" name="name" minlength="1" maxlength="15" required>
+                            <input type="text" id="name" name="name" minlength="1" maxlength="15" required placeholder="Ramzis">
                         </div>
                         <div>
                             <label for="age">Amzius:</label>
-                            <input type="number" id="age" name="age" min="0" max="30" required>
+                            <input type="number" id="age" name="age" min="0" max="30" required placeholder="5">
+                        </div>
+                        <div>
+                            <label for="animal">Gyvuno Tipas:</label>
+                            <input type="text" id="animal" name="animal" minlength="1" maxlength="15" required placeholder="Suo">
                         </div>
                         <div>
                             <label for="breed">Veisle:</label>
-                            <input type="text" id="breed" name="breed" minlength="1" maxlength="20" required>
+                            <input type="text" id="breed" name="breed" minlength="1" maxlength="20" placeholder="Vokieciu Aviganis">
                         </div>
                         <div>
                             <label for="info">Papildoma Informacija:</label>
-                            <textarea id="info" name="info" minlength="1" required></textarea>
+                            <textarea id="info" name="info" minlength="1" required placeholder="Gyvunelio pomegiai, megstamiausias maistas, ir kita"></textarea>
+                        </div>
+                        <div>
+                            <label for="image">Nuotrauka:</label>
+                            <input type="url" id="image" name="image" required placeholder="https://www.google.com/image/">
                         </div>
                         <div>
                             <button type="submit">Pateikti</button>
