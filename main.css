@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 .header {
     width: 600px;
@@ -37,22 +40,6 @@ body {
     text-decoration: none;
     color: white;
 }
-/* Nustatome visų elementų bazinius stilius */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
-}
-
-/* Pagrindinio puslapio fono ir teksto nustatymai */
-body {
-    background: white;
-    color: black;
-    text-align: center;
-    padding: 20px;
-}
-
 /* Antraštės stilius */
 h2 {
     margin-bottom: 15px;
@@ -124,16 +111,13 @@ h2 {
     width: 50px;
     height: 50px;
 }
-
-/* Mobile First - iki 600px */
-@media (max-width: 600px) {
     .icons {
         align-items: center;
     }
     .icon-row {
         flex-wrap: wrap;
     }
-}
+
 footer {
     padding: 30px 50px;
     font-size: 25px;
@@ -154,10 +138,9 @@ footer {
 
 a {
     text-decoration: none;
-    padding: 5px;
+    /* padding: 5px; */
     color: #2aabd6;
 }
-
 #fSubmitButton {
     height: 60px;
     width: 170px;
@@ -168,7 +151,6 @@ a {
     border: none;
     color: white;
 }
-
 .fH3{
     color: #2aabd6;
 }
