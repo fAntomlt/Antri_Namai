@@ -5,7 +5,7 @@ body {
     font-style: normal;
   }
 .header {
-    width: 600px;
+    width: 585px;
     height: 100px;
     background-color: #2aabd6;
     color: white;
@@ -39,6 +39,48 @@ body {
     font-style: italic;
     text-decoration: none;
     color: white;
+}
+/* mano  */
+.imgFon {
+    position: relative; /* Kad pseudo-elementas būtų pozicionuojamas teisingai */
+    background-image: url(./media/suniuku_foto.jpg);
+    width: 100%; /* Užima visą plotį */
+    max-width: 600px; /* Neviršija 600px pločio */
+    height: 400px; /* Nustatytas aukštis */
+    background-size: cover; /* Paveikslėlis užpildo visą sekciją */
+    background-position: center; /* Paveikslėlis centruotas */
+    background-repeat: no-repeat; /* Ne kartoti paveikslėlio */
+    margin: 0 auto; /* Centruoja sekciją puslapyje */
+    box-shadow: 0 0 100px #2aabd6; /* Sukuria šešėlį */
+}
+.imgFon::before {
+    content: ""; /* Sukuriame tuščią turinį */
+    position: absolute; /* Pseudo-elementas bus pozicionuojamas absoliučiai */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(78, 186, 241, 0.3); /* Spalva su skaidrumu (mėlyna su 30% skaidrumu) */
+    z-index: 1; /* Užtikrina, kad spalva būtų virš paveikslėlio, bet ne virš kitų elementų */
+}
+.buttonParama{
+    background-color: #2aabd6;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #2aabd6;
+    border-radius: 7px;
+    font-size: larger;
+    margin-left: 350px;
+    margin-top: 150px;
+    z-index: 10;
+}
+.buttonParama:hover {
+    background: black;
+}
+.paramaH1 {
+    padding-top: 20px;
+    padding-left: 20px;
 }
 /* Antraštės stilius */
 h2 {
