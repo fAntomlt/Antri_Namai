@@ -124,3 +124,54 @@ body{
         }
     }
 }
+@media (min-width: 900px) {
+    .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    }
+    .contactCard {
+    flex: 1;
+    max-width: 45%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    }
+    .contactCard:hover {
+    transform: translateY(-5px);
+    }
+    .contactCard h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+    .contactCard p {
+    font-size: 18px;
+    line-height: 28px;
+    }
+    .contactCard img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    }
+    .companyInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    }
+    .companyInfo .info-text {
+    max-width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    }
