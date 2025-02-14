@@ -178,6 +178,83 @@ footer {
     margin-bottom: -5px;
 }
 
+    /* Bendrasis konteinerio stilius */
+    .container {
+        text-align: center;
+        width: 100%;
+        padding: 2px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    /* Antraštės stilius */
+    .section-title {
+        margin-bottom: 3px;
+        font-size: 0.95em;
+    }
+    
+    /* Mygtukų konteineris */
+    .support-section {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        margin-bottom: 3px;
+        flex-wrap: wrap;
+    }
+    
+    /* Mygtukų stilius */
+    .support-button {
+        flex: 1;
+        padding: 3px 10px;
+        border-radius: 7px;
+        text-align: center;
+        background-color: #2aabd6;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-size: 0.7em;
+        white-space: nowrap;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .support-button:hover {
+        background-color: black;
+    }
+    
+    /* Ikonų konteineris */
+    .icons-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        margin-top: 3px;
+        width: 100%;
+    }
+    
+    .icon-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    /* Kiekvienos ikonos dėžutė */
+    .icon-box {
+        flex: 1 1 30%;
+        max-width: 72px;
+        padding: 1px;
+        border-radius: 7px;
+        text-align: center;
+        font-size: 0.65em;
+    }
+    
+    .icon-box img {
+        width: 20px;
+        height: 20px;
+    }
+
 .fLogo {
     width: 100px;
     height: 100px;
