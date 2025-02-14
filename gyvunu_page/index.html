@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antri Namai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="./main.js" defer></script>
 </head>
@@ -24,7 +25,45 @@
         </div>
     </header>
     <main>
+        <section class="gyvunai"> <!-- Prideti Gyvuna -->
+            <div> <!-- Gyvunu Korteles -->
 
+            </div>
+            <div class="pridejimoInfo">
+                <h1>Gyvuno Pridejimas</h1>
+                <p>Nori, jog tavo gyvunas surastu naujus namus greiciau?<br>
+                Prisidek ji i musu registru sarasa!
+                </p>
+            </div>
+            <div class="pridejimoForma"> <!-- Gyvunu pridejimo forma -->
+                <form>
+                    <div class="top">
+
+                    </div>
+                    <div class="entry">
+                        <div>
+                            <label for="name">Vardas:</label>
+                            <input type="text" id="name" name="name" minlength="1" maxlength="15" required>
+                        </div>
+                        <div>
+                            <label for="age">Amzius:</label>
+                            <input type="number" id="age" name="age" min="0" max="30" required>
+                        </div>
+                        <div>
+                            <label for="breed">Veisle:</label>
+                            <input type="text" id="breed" name="breed" minlength="1" maxlength="20" required>
+                        </div>
+                        <div>
+                            <label for="info">Papildoma Informacija:</label>
+                            <textarea id="info" name="info" minlength="1" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Pateikti</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
 
