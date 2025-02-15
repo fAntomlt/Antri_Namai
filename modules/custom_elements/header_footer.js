@@ -10,10 +10,10 @@ class SpecialHeader extends HTMLElement {
                     <h3 class="antriH">Antri namai</h3>
                 </div>
                 <div class="centerRigth">
-                    <a class="klaseA" href="./Parama_page/parama.html">Parama</a>
-                    <a class="klaseA" href="./gyvunu_page/index.html">Gyvūnai</a>
-                    <a class="klaseA" href="./registracijos_forma/index.html">Vizitas</a>
-                    <a class="klaseA" href="./kontaktu_page/index.html">Kontaktai</a>
+                    <a class="klaseA" href="../Parama_page/parama.html">Parama</a>
+                    <a class="klaseA" href="../gyvunu_page/index.html">Gyvūnai</a>
+                    <a class="klaseA" href="../registracijos_forma/index.html">Vizitas</a>
+                    <a class="klaseA" href="../kontaktu_page/index.html">Kontaktai</a>
                 </div>
             </section>
         </nav>
