@@ -7,19 +7,6 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
 }
-.header{
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    >nav{
-        >ul{
-            display: flex;
-            gap: 5px;
-        }
-    }
-}
 .info {
     position: relative;
     background-image: url(./media/wallpaperflare.com_wallpaper.jpg);
