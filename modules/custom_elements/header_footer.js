@@ -1,3 +1,27 @@
+class SpecialHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header>
+        <!-- HEADER -->
+        <nav class="header">
+            <section class="klaseFlex">
+                <div class="antriN">
+                    <img class="logoDydis" src="https://cdn-icons-png.flaticon.com/512/3769/3769017.png" alt="mažas namelis su letena"> 
+                    <h3 class="antriH">Antri namai</h3>
+                </div>
+                <div class="centerRigth">
+                    <a class="klaseA" href="./Parama_page/parama.html">Parama</a>
+                    <a class="klaseA" href="./gyvunu_page/index.html">Gyvūnai</a>
+                    <a class="klaseA" href="./registracijos_forma/index.html">Vizitas</a>
+                    <a class="klaseA" href="./kontaktu_page/index.html">Kontaktai</a>
+                </div>
+            </section>
+        </nav>
+    </header>
+        `
+    }
+}
+
 class SpecialFooter extends HTMLElement {
     connectedCallback() { 
         this.innerHTML = `
@@ -51,4 +75,5 @@ class SpecialFooter extends HTMLElement {
     }
 }
 
+customElements.define('special-header', SpecialHeader)
 customElements.define('special-footer', SpecialFooter)
