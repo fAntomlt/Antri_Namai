@@ -19,13 +19,15 @@ body {
 }
 .antriN{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding-top: 20px;
 }
 .logoDydis {
     width: 50px;
     height: 50px;
+    padding-bottom: 45px;
 }
 .antriH{
     padding-bottom: 20px;
@@ -38,6 +40,10 @@ body {
 .klaseA{
     text-decoration: none;
     color: white;
+    transition: font-size 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+.klaseA:hover{
+    font-size: 22px;
 }
 
 /* HERO STILIAI */
@@ -320,6 +326,10 @@ footer {
     text-decoration: none;
     padding: 5px;
     color: black;
+    transition: font-size 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+.fSocial:hover{
+    color: white;
 }
 #fSubmitButton {
     height: 60px;
@@ -333,7 +343,8 @@ footer {
 }
 
 #fSubmitButton:hover {
-    background-color: #c6e2eb;
+    background-color: white;
+    cursor: pointer
 }
 
 .fH3{
@@ -359,17 +370,40 @@ footer {
 /* DESKTOP DESIGN KLASES */
 @media (min-width: 900px) {
     /* HEADER DESKTOP */
+    .antriN{
+        gap: 20px;
+    }
+    .antriH{
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
     .klaseFlex{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .centerRigth{
-        display: flex;
-        gap: 50px;
-    }
     .klaseA{
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .centerRigth{
+        margin-top: 35px;
+        gap: 40px;
+    }
+    .logoDydis{
+        padding-bottom: 0px;
+    }
+
+    /* HERO DESKTOP */
+    .infoName{
+        >h1{
+            font-size: 90px;
+        }
+    }
+    .infoBox{
+        margin-top: 20px;
+        font-size: 19px;
     }
 
     /* FOOTER DESKTOP */
