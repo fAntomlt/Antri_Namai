@@ -125,104 +125,37 @@ body{
     }
 }
 @media (min-width: 900px) {
-    .contact {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
+    .contact{
+        margin: 30px 0;
+        flex-direction: row;
     }
-    .contactCard {
-    flex: 1;
-    max-width: 45%;
-    padding: 50px;
-    border-radius: 7px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-    background-color: white;
-    color: black;
-    text-align: center;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-    .contactCard:hover {
-    transform: translateY(-5px);
-    }
-    .contactCard h3 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    }
-    .contactCard p {
-    font-size: 22px;
-    line-height: 32px;
-    flex-grow: 1;
-    }
-    .contactCard img {
-    width: 80%;
-    height: 60%;
-    border-radius: 7px;
-    margin-top: 20px;
-    }
-    .contactSecond{
+    .contactCard{
+        width: 650px;
         height: 600px;
     }
-    .companyInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #2aabd6;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .contactSecond{
+        >h3{
+            padding-bottom: 10px;
+        }
     }
-    .companyInfo .info-text {
-    max-width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
+    .info{
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-size: 1000px;
+        background-position: center top 550px;
+        >div:nth-child(1){
+            >h1{
+                font-size: 60px;
+            }
+        }
+        >div:nth-child(2){
+            padding-bottom: 50px;
+            >p{
+                font-size: 23px;
+            }
+        }
     }
-    .info {
-    background-size: cover;
-    background-image: url('./media/wallpaperflare.com_wallpaper.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-    .companyInfo img {
-    width: 70%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 7px;
-    margin-top: 20px;
-    }
-    .header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    }
-    .header nav ul li {
-    font-size: 20px;
-    }
-    .info {
-    font-family: 'Outfit', sans-serif;
-    text-align: center;
-    padding: 40px;
-    }
-    .info h1 {
-    font-size: 40px;
-    font-weight: bold;
-    }
-    .info p {
-    font-size: 22px;
-    }
-    }
+}
     
     
