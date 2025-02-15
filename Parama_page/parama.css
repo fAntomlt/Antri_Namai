@@ -41,7 +41,7 @@ body {
     color: white;
 }
 .imgStilFlex{
-    background-image: url(./media/kaciuk.jpg);
+    background-image: url(./media/Gyvūnųzaislai.jpg);
     position: relative;
     width: 600px;
     height: 400px;
@@ -49,68 +49,98 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-    box-shadow: 0 0 100px #2aabd69c;
 }
-
+.imgStilFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.form-container {
+    width: 600px; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+input[type="number"], button {
+    padding: 10px;
+    margin: 10px 0; 
+    font-size: 16px;
+    border-radius: 5px; 
+    border: 1px solid #007bb5; 
+}
+button {
+    background-color: #007bb5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+}
+button:hover {
+    background-color: black;
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2aabd6;
+    font-style: italic;
+    font-size: 30px;
+}
+#thanksMessage {
+    /* margin-top: 0px; */
+    font-size: 50px;
+    color: white;
+}
 .imgStilFlex2{
     position: relative;
     width: 600px;
-    height: 400px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     box-shadow: 0 0 100px #2aabd69c;
-}
-.imgParama{
-    width: 150px;
-    height: 150px;
-}
-.divParama {
-  text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .divParama p {
     margin: 0;
-    word-wrap: break-word; /* Užtikrina, kad ilgi žodžiai nesulaužytų dizaino */
-    color: #2aabd69c; 
-    font-style: #2aabd69c;
-    font-size: 20px;
+    word-wrap: break-word;
+    color: black; 
+    font-size: 15px;
     font-weight: bold;
 }
-.paramaH1{
-    color: #2aabd69c;
+.paramaH1 {
+    color: black;
+    padding-top: 20px;
 }
-
-/* paramos forma */
+@media (min-width: 900px) {
+  /* main */
+.imgStilFlex{
+    width: 900px;
+    height: 600px;
+}
 .form-container {
-    /* display: grid; */
-    /* margin-top: 20px; */
-    gap: 5px;
-}
-input[type="number"] {
-    /* padding: 10px; */
-    width: 100px;
-    margin-right: 10px;
-    border: 2px solid #2aabd6;
-    border-radius: 7px;
+    width: 900px; 
+    height: 600px; 
 }
 button {
-    /* padding: 10px 20px; */
-    background-color: #2aabd6;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 7px;
+    width: 240px;
+ }
+.imgStilFlex2{
+    width: 900px;
+    height: 200px;  
+}   
+.divParama{
+    width: 800px;
+    padding-left: 25px;
 }
-button:hover {
-    background-color: #1a8a9c;
 }
-#thanksMessage {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #2aabd6;
-}
-label {
-    color: #2aabd6;
-    font-style: italic;
-}
+
