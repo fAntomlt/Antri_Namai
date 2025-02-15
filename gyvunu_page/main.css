@@ -9,6 +9,10 @@ body{
     margin-left: 0;
     padding-left: 0;
 }
+.klaseFlex{
+    gap: 700px;
+    padding-bottom: 30px;
+}
 .tarpineFoto{
     width: 100%;
     height: 250px;
