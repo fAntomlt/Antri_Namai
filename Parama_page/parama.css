@@ -80,7 +80,7 @@ button {
     color: white;
     cursor: pointer;
     font-weight: bold;
-    width: 100%; 
+    width: 200px;
 }
 button:hover {
     background-color: black;
@@ -97,7 +97,6 @@ label {
     font-size: 50px;
     color: white;
 }
-
 .imgStilFlex2{
     position: relative;
     width: 600px;
@@ -122,13 +121,26 @@ label {
     color: black;
     padding-top: 20px;
 }
-
-/* #thanksMessage {
-    font-size: 50px;
-    color: white;
+@media (min-width: 900px) {
+  /* main */
+.imgStilFlex{
+    width: 900px;
+    height: 600px;
 }
-label {
-    color: #2aabd6;
-    font-style: italic;
-    font-size: 30px;
-} */
+.form-container {
+    width: 900px; 
+    height: 600px; 
+}
+button {
+    width: 240px;
+ }
+.imgStilFlex2{
+    width: 900px;
+    height: 200px;  
+}   
+.divParama{
+    width: 800px;
+    padding-left: 25px;
+}
+}
+
