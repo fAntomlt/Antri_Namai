@@ -9,16 +9,46 @@ body{
     margin-left: 0;
     padding-left: 0;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .klaseFlex{
-    gap: 700px;
     padding-bottom: 30px;
 }
 .tarpineFoto{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 250px;
-    background-position: center;
-    background-size: cover;
+    padding-bottom: 200px;
+    background-size: 1200px;
     position: relative;
+    width: 100%;
+    >div:nth-child(1){
+        color: white;
+        z-index: 2;
+        padding-bottom: 40px;
+        margin-top: 200px;
+        >h1{
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    >div:nth-child(2){
+        color: white;
+        z-index: 2;
+        padding-bottom: 20px;
+        >p{
+            text-align: center;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
 }
 .tarpineFoto::after {
     content: "";
@@ -28,6 +58,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #2aabd659;
+    z-index: 1;
 }
 .pirma{
     background-image: url(./media/10773772.jpg);
@@ -35,46 +66,23 @@ body{
 }
 .heading{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 90px 70px;
-    border-radius: 7px;
+    padding-bottom: 30px;
+    padding-top: 50px;
     >h1{
         font-size: 2em;
     }
 }
-.header{
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    >nav{
-        >ul{
-            display: flex;
-            gap: 5px;
-        }
-    }
-}
-.gyvunai{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .pridejimoInfo{
     padding: 20px 0;
     margin-top: 40px;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 90px 40px;
-    border-radius: 7px;
     >h1, p{
         margin: 0;
         margin-top: 20px;
@@ -88,11 +96,6 @@ body{
     background-color: #2aabd6;
     width: 450px;
     height: 50px;
-}
-.heading{
-    >div{
-        display: none;
-    }
 }
 .pridejimoForma{
     justify-content: center;
@@ -160,6 +163,22 @@ button:hover {
     gap: 20px;
     margin-bottom: 20px;
 }
+.animalsSection{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.gyvunai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
 .animal-card {
     padding: 20px;
     border-radius: 7px;
@@ -193,44 +212,20 @@ button:hover {
 }
 
 @media (min-width: 900px){
-    .animalsSection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 200px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 50px 250px;
-        padding: 40px 100px;
-        border-radius: 7px;
+    .pridejimoForma{
+        margin: 0;
+    }
+    .pridejimoInfo{
+        margin: 0
     }
     .heading{
         flex-direction: column;
-        text-align: center;
-        gap: 0px;
-        margin-bottom: 100px;
-        >div{
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            >p{
-                margin: 5px;
-            }
-        }
     }
     .gyvunai{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 200px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 50px 250px;
-        padding: 40px 100px;
-        border-radius: 7px;
+        margin-top: 40px;
     }
-    .pridejimoInfo{
-        >p{
-            line-height: 30px;
-        }
+    .pirma{
+        background-size: cover;
+        background-position: center top 1000px;
     }
 }
