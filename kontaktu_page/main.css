@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* GENERAL STILIAI */
 body{
     margin: 0px;
     padding: 0px;
@@ -7,6 +8,8 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/* VIRSUTINES NUOTRAUKOS STILIAI */
 .info {
     position: relative;
     background-image: url(./media/wallpaperflare.com_wallpaper.jpg);
@@ -41,7 +44,6 @@ body{
         }
     }
 }
-
 .info::before {
     content: "";
     position: absolute;
@@ -52,6 +54,8 @@ body{
     background-color: #2f9cc052;
     z-index: 1;
 }
+
+/* KONTAKTU STILIAI */
 .contact{
     display: flex;
     flex-direction: column;
@@ -111,6 +115,8 @@ body{
         }
     }
 }
+
+/* DESKTOP DESIGN */
 @media (min-width: 900px) {
     .contact{
         margin: 30px 0;
