@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* GENERAL STILIAI */
 body{
     margin: 0px;
     padding: 0px;
@@ -13,9 +14,13 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+
+/* HEADER STILIAI */
 .klaseFlex{
     padding-bottom: 30px;
 }
+
+/* TOP PICTURE STILIAI */
 .tarpineFoto{
     display: flex;
     flex-direction: column;
@@ -64,6 +69,16 @@ html, body {
     background-image: url(./media/10773772.jpg);
     background-position: center bottom 500px;
 }
+
+/* KORTELIU STILIAI */
+.animalsSection{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
 .heading{
     display: flex;
     flex-direction: column;
@@ -75,6 +90,54 @@ html, body {
     >h1{
         font-size: 2em;
     }
+}
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.animal-card {
+    padding: 20px;
+    border-radius: 7px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    >img{
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+    }
+}
+.more-info {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.more-info.open {
+    max-height: 600px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* FORMOS STILIAI */
+.gyvunai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
 }
 .pridejimoInfo{
     padding: 20px 0;
@@ -92,11 +155,6 @@ html, body {
         text-align: center;
     }
 }
-.top{
-    background-color: #2aabd6;
-    width: 450px;
-    height: 50px;
-}
 .pridejimoForma{
     justify-content: center;
     align-items: center;
@@ -107,6 +165,11 @@ html, body {
     border-radius: 7px;
     overflow: hidden;
     width: 450px;
+}
+.top{
+    background-color: #2aabd6;
+    width: 450px;
+    height: 50px;
 }
 .entry{
     margin-top: 20px;
@@ -155,62 +218,8 @@ button {
 button:hover {
     background-color: #238db1;
 }
-.cardsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-.animalsSection{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-}
-.gyvunai{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 50px;
-}
-.animal-card {
-    padding: 20px;
-    border-radius: 7px;
-    width: 200px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow: hidden;
-    transition: height 0.3s ease;
-    >img{
-        width: 200px;
-        height: 150px;
-        border-radius: 5px;
-    }
-}
 
-.more-info {
-    margin-top: 10px;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-}
-.more-info.open {
-    max-height: 600px;
-    opacity: 1;
-    overflow: hidden;
-}
-
+/* DESKTOP DESIGN */
 @media (min-width: 900px){
     .pridejimoForma{
         margin: 0;
