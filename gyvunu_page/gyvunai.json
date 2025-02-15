@@ -17,6 +17,15 @@
       "breed": "American Bobtail",
       "info": "Valgo, zaidzia",
       "image": "https://publish.purewow.net/wp-content/uploads/sites/2/2022/01/rarest-cat-breeds-american-bobtail.jpg"
+    },
+    {
+      "id": "114c",
+      "name": "Tonis",
+      "age": "11",
+      "animal": "Suo",
+      "breed": "Pitbulis",
+      "info": "Megsta begioti, zaisti, grauzti sofa",
+      "image": "https://images.squarespace-cdn.com/content/v1/5aa0bf73af2096458586fb17/1611190875317-B8VIM800S16KXB2WEQGM/image-asset.jpeg"
     }
   ]
 }
