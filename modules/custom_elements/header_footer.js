@@ -7,7 +7,7 @@ class SpecialHeader extends HTMLElement {
             <section class="klaseFlex">
                 <div class="antriN">
                     <img class="logoDydis" src="https://cdn-icons-png.flaticon.com/512/3769/3769017.png" alt="mažas namelis su letena"> 
-                    <h3 class="antriH">Antri namai</h3>
+                    <a href="../index.html"><h3 class="antriH">Antri namai</h3></a>
                 </div>
                 <div class="centerRigth">
                     <a class="klaseA" href="../Parama_page/parama.html">Parama</a>

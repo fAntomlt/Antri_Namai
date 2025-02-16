@@ -23,6 +23,9 @@ body {
     align-items: center;
     gap: 10px;
     padding-top: 20px;
+    >a{
+        text-decoration: none;
+    }
 }
 .logoDydis {
     width: 50px;
@@ -31,6 +34,8 @@ body {
 }
 .antriH{
     padding-bottom: 20px;
+    color: white;
+    cursor: pointer;
 }
 .centerRigth {
     display: flex;
