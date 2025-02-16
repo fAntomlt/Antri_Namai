@@ -1,5 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* GENERAL STILIAI */
 body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
@@ -9,6 +10,8 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+
+/* FOTO SEKCIJOS STILIAI */
 .tarpineFoto{
     display: flex;
     flex-direction: column;
@@ -59,6 +62,34 @@ html, body {
     background-image: url(./media/17cfc6f0-7b01-11ed-92a1-a92948926a59.jpg);
     background-position: center bottom 500px;
 }
+
+/* HEADING STILIAI */
+.imgStilFlex2{
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.divParama{
+    padding-top: 40px;
+}
+.divParama p {
+    margin: 0;
+    word-wrap: break-word;
+    color: black; 
+    padding: 0 100px;
+}
+.paramaH1{
+    padding: 0px;
+}
+
+/* FORMOS STILIAI */
 .imgStilFlex{
     padding: 0px 50px 100px 50px;
     display: flex;
@@ -85,9 +116,9 @@ html, body {
     box-sizing: border-box;
     gap: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-}
-.form-container *{
-    z-index: 2;
+    > *{
+        z-index: 2;
+    }
 }
 .form-container::before {
     content: "";
@@ -99,6 +130,10 @@ html, body {
     background-color: rgba(0, 0, 0, 0.397);
     border-radius: 10px;
     z-index: 1;
+}
+#thanksMessage {
+    font-size: 50px;
+    color: white;
 }
 input[type="number"], button {
     padding: 10px;
@@ -122,54 +157,26 @@ label {
     color: #2aabd6;
     font-size: 40px;
 }
-#thanksMessage {
-    /* margin-top: 0px; */
-    font-size: 50px;
-    color: white;
-}
-.imgStilFlex2{
-    position: relative;
-    width: 600px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.divParama{
-    padding-top: 40px;
-}
-.divParama p {
-    margin: 0;
-    word-wrap: break-word;
-    color: black; 
-    padding: 0 100px;
-}
-.paramaH1{
-    padding: 0px;
-}
+
+/* DESKTOP DESIGN */
 @media (min-width: 900px) {
-  /* main */
-.imgStilFlex{
-    width: 900px;
-    height: 600px;
-}
-.form-container {
-    width: 900px; 
-    height: 600px; 
-}
-button {
-    width: 240px;
- }
-.imgStilFlex2{
-    width: 900px;
-    height: 200px;  
-}   
-.divParama{
-    width: 800px;
-    padding-left: 25px;
-}
+    .imgStilFlex{
+        width: 900px;
+        height: 600px;
+    }
+    .form-container {
+        width: 900px; 
+        height: 600px; 
+    }
+    button {
+        width: 240px;
+    }
+    .imgStilFlex2{
+        width: 900px;
+        height: 200px;  
+    }
+    .divParama{
+        width: 800px;
+        padding-left: 25px;
+    }
 }
