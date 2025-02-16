@@ -3,13 +3,33 @@ body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-top: 100px;
 }
 
 /* HEADER STILIAI */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100px;
     background-color: #2aabd6;
     color: white;
+    z-index: 30;
+    overflow: hidden;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 150%;
+    height: 200%;
+    transform: rotate(-7deg);
+    background-image: url(./media/—Pngtree—black\ bear\ paw\ prints_6083126.png);
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
 }
 .klaseFlex{
     display: flex;
@@ -104,12 +124,15 @@ body {
     transform: translateX(-50%);
     color: #fff;
     text-align: center;
-    font-size: 30px;
     font-weight: bold;
     white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 10px;
     >h1{
         margin-bottom: 0px;
-        font-size: 66px
+        font-size: 86px
     }
     >h2{
         margin-top: 5px;
@@ -402,13 +425,20 @@ footer {
 
     /* HERO DESKTOP */
     .infoName{
+        margin-top: 0px;
         >h1{
-            font-size: 90px;
+            font-size: 100px;
+        }
+        >h2{
+            font-size: 30px;
         }
     }
     .infoBox{
-        margin-top: 20px;
-        font-size: 19px;
+        margin-top: 110px;
+        font-size: 22px;
+        >span{
+            display: flex;
+        }
     }
 
     /* FOOTER DESKTOP */
