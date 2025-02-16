@@ -63,35 +63,11 @@ html, body {
     background-position: center bottom 500px;
 }
 
-/* HEADING STILIAI */
-.imgStilFlex2{
-    position: relative;
-    width: 600px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.divParama{
-    padding-top: 40px;
-}
-.divParama p {
-    margin: 0;
-    word-wrap: break-word;
-    color: black; 
-    padding: 0 100px;
-}
-.paramaH1{
-    padding: 0px;
-}
-
 /* FORMOS STILIAI */
 .imgStilFlex{
-    padding: 0px 50px 100px 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -158,25 +134,59 @@ label {
     font-size: 40px;
 }
 
+/* HEADING STILIAI */
+.imgStilFlex2{
+    padding-top: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.divParama p {
+    margin: 0;
+    word-wrap: break-word;
+    color: black; 
+    padding: 0 100px;
+}
+.paramaH1{
+    padding: 0px;
+}
+
 /* DESKTOP DESIGN */
 @media (min-width: 900px) {
     .imgStilFlex{
-        width: 900px;
+        width: auto;
         height: 600px;
+        padding-bottom: 100px;
+        margin-top: 250px;
     }
     .form-container {
-        width: 900px; 
-        height: 600px; 
+        width: 1100px;
+        height: 900px;
     }
     button {
         width: 240px;
     }
     .imgStilFlex2{
-        width: 900px;
-        height: 200px;  
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 200px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .divParama{
-        width: 800px;
         padding-left: 25px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .tarpineFoto{
+        background-size: 2200px;
     }
 }
