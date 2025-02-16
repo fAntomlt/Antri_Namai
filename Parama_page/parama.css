@@ -1,61 +1,87 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* GENERAL STILIAI */
 body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
-.header {
-    height: 100px;
-    background-color: #2aabd6;
-    color: white;
 }
-.logoDydis {
-    width: 50px;
-    height: 50px;
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
-.klaseFlex{
+
+/* FOTO SEKCIJOS STILIAI */
+.tarpineFoto{
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    padding-bottom: 200px;
+    background-size: 1200px;
+    position: relative;
+    width: 100%;
+    >div{
+        padding: 20px;
+    }
+    >div:nth-child(1){
+        color: white;
+        z-index: 2;
+        margin-top: 200px;
+        >h1{
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    >div:nth-child(2){
+        color: white;
+        z-index: 2;
+        padding-bottom: 0px;
+        >p{
+            text-align: center;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+.tarpineFoto::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2aabd659;
+    z-index: 1;
+}
+.pirma{
+    background-image: url(./media/17cfc6f0-7b01-11ed-92a1-a92948926a59.jpg);
+    background-position: center bottom 500px;
+}
+
+/* FORMOS STILIAI */
+.imgStilFlex{
+    padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-}
-.centerRigth {
     display: flex;
-    gap: 20px;
-    /* text-align: center; */
-    align-items: center;
-}
-.antriN{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding-top: 20px;
-}
-.antriH{
-    padding-bottom: 20px;
-}
-.klaseA{
-    font-style: italic;
-    text-decoration: none;
-    color: white;
-}
-.imgStilFlex{
-    background-image: url(./media/Gyvūnųzaislai.jpg);
+    justify-content: center;
+    align-items: center; 
     position: relative;
-    width: 600px;
-    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-.imgStilFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 .form-container {
+    position: relative;
+    overflow: hidden;
+    background-image: url(./media/Gyvūnųzaislai.jpg);
+    background-size: cover;
     width: 600px; 
     height: 400px; 
     display: flex;
@@ -63,10 +89,27 @@ body {
     justify-content: center; 
     align-items: center; 
     border-radius: 10px; 
-    padding: 20px;
     box-sizing: border-box;
-    gap: 5px;
+    gap: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    > *{
+        z-index: 2;
+    }
+}
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    z-index: 1;
+}
+#thanksMessage {
+    font-size: 50px;
+    color: white;
 }
 input[type="number"], button {
     padding: 10px;
@@ -86,26 +129,19 @@ button:hover {
     background-color: black;
 }
 label {
-    font-size: 18px;
     font-weight: bold;
     color: #2aabd6;
-    font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
 }
-#thanksMessage {
-    /* margin-top: 0px; */
-    font-size: 50px;
-    color: white;
-}
+
+/* HEADING STILIAI */
 .imgStilFlex2{
+    padding-top: 20px;
     position: relative;
-    width: 600px;
-    height: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-    box-shadow: 0 0 100px #2aabd69c;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -114,33 +150,43 @@ label {
     margin: 0;
     word-wrap: break-word;
     color: black; 
-    font-size: 15px;
-    font-weight: bold;
+    padding: 0 100px;
 }
-.paramaH1 {
-    color: black;
-    padding-top: 20px;
-}
-@media (min-width: 900px) {
-  /* main */
-.imgStilFlex{
-    width: 900px;
-    height: 600px;
-}
-.form-container {
-    width: 900px; 
-    height: 600px; 
-}
-button {
-    width: 240px;
- }
-.imgStilFlex2{
-    width: 900px;
-    height: 200px;  
-}   
-.divParama{
-    width: 800px;
-    padding-left: 25px;
-}
+.paramaH1{
+    padding: 0px;
 }
 
+/* DESKTOP DESIGN */
+@media (min-width: 900px) {
+    .imgStilFlex{
+        width: auto;
+        height: 600px;
+        padding-bottom: 100px;
+        margin-top: 250px;
+    }
+    .form-container {
+        width: 1100px;
+        height: 900px;
+    }
+    button {
+        width: 240px;
+    }
+    .imgStilFlex2{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 200px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .divParama{
+        padding-left: 25px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .tarpineFoto{
+        background-size: 2200px;
+    }
+}
