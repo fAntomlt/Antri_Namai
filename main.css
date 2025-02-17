@@ -394,7 +394,22 @@ footer {
 .footer-column{
     padding-top: 30px;
 }
-
+.logoDisplay{
+    display: flex;
+    padding: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.divLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
 /* DESKTOP DESIGN KLASES */
 @media (min-width: 900px) {
     /* HEADER DESKTOP */
@@ -478,5 +493,8 @@ footer {
     font-size: 18px;
     margin-top: 20px;
     padding: 10px;
+    }
+    .logoDisplay{
+    gap: 70px;
     }
 }
