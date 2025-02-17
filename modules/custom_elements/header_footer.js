@@ -67,7 +67,7 @@ class SpecialFooter extends HTMLElement {
                     </div>   
                 </div>
                 <div class="rightsReserved">
-                    <p>© 2025 All Rights Reserved</p>
+                    <p>Antri Namai<br> © 2025 All Rights Reserved</p>
                 </div>
             </footer>
         </div>
