@@ -26,6 +26,24 @@
       "breed": "Pitbulis",
       "info": "Megsta begioti, zaisti, grauzti sofa",
       "image": "https://images.squarespace-cdn.com/content/v1/5aa0bf73af2096458586fb17/1611190875317-B8VIM800S16KXB2WEQGM/image-asset.jpeg"
+    },
+    {
+      "id": "8191",
+      "name": "Luna",
+      "age": "8",
+      "animal": "Suo",
+      "breed": "Vokieciu Aviganis",
+      "info": "Megsta zaisti, begioti, griauzti sofa",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/005/857/332/small_2x/funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg"
+    },
+    {
+      "id": "1e09",
+      "name": "Bieksa",
+      "age": "25",
+      "animal": "Suo",
+      "breed": "Buldogas",
+      "info": "Megsta skanestus",
+      "image": "https://apiesunis.lt/wp-content/uploads/2020/12/prancuzu-buldogas-300x240.jpg"
     }
   ]
 }
